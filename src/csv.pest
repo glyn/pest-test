@@ -3,3 +3,5 @@ selector = _{ SOI ~ rootSelector ~ matchers ~ EOI }
 matchers = ${ matcher* }
 rootSelector = { "$" }
 matcher = { "0" }
+
+WHITESPACE = _{ " " }
