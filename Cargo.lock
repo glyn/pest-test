@@ -36,15 +36,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "14c189c53d098945499cdfa7ecc63567cf3886b3332b312a5b4585d8d3a6a610"
 
 [[package]]
-name = "csv-tool"
-version = "0.1.0"
-dependencies = [
- "pest",
- "pest_derive",
- "serde_json",
-]
-
-[[package]]
 name = "digest"
 version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -191,6 +182,15 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-xid",
+]
+
+[[package]]
+name = "test-pest"
+version = "0.1.0"
+dependencies = [
+ "pest",
+ "pest_derive",
+ "serde_json",
 ]
 
 [[package]]
