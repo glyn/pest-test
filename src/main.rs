@@ -12,8 +12,12 @@ use std::num::ParseIntError;
 pub struct CSVParser;
 
 fn main() {
-    let selector_rule = CSVParser::parse(Rule::selector, "$")
+    let selector_rule = CSVParser::parse(Rule::selector, " $")
         .map_err(|e| format!("{}", e))
+        .map_err(|e| {
+            println!("{}", e);
+            e
+        })
         .expect("invalid parse result")
         .nth(1)
         .unwrap();
